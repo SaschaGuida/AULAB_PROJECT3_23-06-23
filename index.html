@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Day 8 - ESERCITAZIONE - RISTORANTE LO SCOGLIO</title>
+    </head>
+    <body>
+
+        <header id="home">
+            <div class="navbar">
+                <ul>
+                    <li class="left-item"><a href="#home">Lo Scoglio</a></li>
+                    <li class="right-item"><a href="#about">About</a></li>
+                    <li class="right-item"><a href="#menu">Menu</a></li>
+                    <li class="right-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <!-- Corpo -->
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Lo Scoglio</h1>
+                <p>Assapora il mare nel cuore del Salento: il nostro ristorante di pesce ti delizierà sugli scogli!</p>
+                <button class="cta-button">Scopri di più</button>
+            </div>
+        </section>
+
+
+
+        <!-- CORPO  -->
+    <div class="container">
+        <div class="card-section">
+            <div class="card" id="about">
+                <div class="card-content">
+                    <div class="card-image flex">
+                        <img src="./img/piatto1.jpeg" alt="Immagine 1">
+                    </div>
+                    <div class="card-details flex">
+                        <h3>About Lo Scoglio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis numquam minima ipsa
+                            suscipit architecto dicta nemo fugiat necessitatibus in eaque sunt quos, asperiores,
+                            voluptatibus fugit ullam facere. Molestiae, molestias explicabo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="menu">
+                <div class="card-content">
+                    <div class="card-details flex">
+                        <h3>Our Menu</h3>
+                            <h4>Bread Basket</h4>
+                            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+                            <h4>Honey Almond Granola with Fruits</h4>
+                            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+                            <h4>Belgian Waffle</h4>
+                            <p>Vanilla flavored batter with malted flour 7.50</p>
+
+                            <h4>Scrambled eggs</h4>
+                            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+                            <h4>Blueberry Pancakes</h4>
+                            <p>With syrup, butter and lots of berries 8.50</p>
+                            <button class="card-button">Our MENU</button>
+                    </div>
+                    <div class="card-image flex">
+                        <img src="./img/piatto1.jpeg" alt="Immagine 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- CONTACT -->
+
+        <section class="contact-section" id="contact">
+            <h1>Book a Table</h1>
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time:</label>
+                <select id="time" name="time" required>
+                    <option value="">Select a Time</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Invia">
+            </form>
+        
+        
+    <!--             <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form> -->
+
+
+        </section>
+
+
+
+
+                </select>
+                
+                
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="logo">
+                <img src="./img/ilpost.png" alt="Logo" height="50">
+            </div>
+            <div class="text">
+                <ul class="footer-menu">
+                    <li><a href="/chi-siamo/">Chi Siamo</a></li>
+                    <li><a href="/privacy/">Privacy</a></li>
+                    <li><a href="#" class="ot-sdk-show-settings" onclick="return false;">Cookie</a></li>
+                    <li><a href="/condizioni-generali/">Condizioni d'uso</a></li>
+                </ul>
+                <p>Assapora il mare nel cuore del Salento: il nostro ristorante di pesce ti delizierà sugli scogli!</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+
+</html>
+

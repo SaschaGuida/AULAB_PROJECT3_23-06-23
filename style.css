@@ -1,0 +1,342 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.flex {
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Noto+Sans+JP:wght@300&family=Pathway+Extreme&family=Poppins:wght@700&display=swap');
+
+/*  font-family: 'Pathway Extreme', sans-serif; - REGULAR400
+    font-family: 'Poppins', sans-serif; - BOLD700
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+
+/* STILE NAVBAR */
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li.left-item {
+    float: left;
+}
+
+.navbar li.right-item {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+}
+
+/* STILE PER IL CONTENUTO */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Stile per la sezione delle card */
+.card-section {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.card {
+    background-color: #F5F5F7;
+    color: #000000;
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 20px 0 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-image {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-details {
+    flex-basis: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-details h3 {
+    align-self: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-details p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #858585;
+    padding-bottom: 3px;
+}
+
+.card-details .card-button {
+    align-self: center;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: #9dedff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-details-button .card-button {
+    align-self: center;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: #9dedff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background-color: #9dedff76;
+    color: #000000;
+}
+
+
+/* Stile per la sezione hero */
+.hero {
+    background-image: url("./img/heroimg.jpg");
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.393);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: 'Pathway Extreme', sans-serif;
+    font-weight: 400;
+}
+
+.cta-button {
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+/* CONTACT */
+
+.contact-section {
+    max-width: 82%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    appearance: none;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+  /* Stile per il footer */
+.footer {
+    background-color: white;
+    border-top: 5px solid #29A6C4;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-menu li {
+    margin-right: 10px;
+}
+
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu li a {
+    color: #46AFCB;
+    text-decoration: none;
+}
+
+.footer .text {
+    display: flex;
+    align-items: center;
+}
+
+.footer .text p {
+    margin-left: 10px;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 20px;
+}
